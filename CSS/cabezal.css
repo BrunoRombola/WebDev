@@ -1,0 +1,42 @@
+*{margin: auto;}
+/*barras*/
+.barras{background-color: #5b8500; background-size: cover; width: 100%;}
+
+.contacto{max-width: 1200px; display:flex;justify-content: left; }
+#locacion{color:#ffffff;font-size:18px; font-family:'Courier New';}
+
+#locacion p{margin: 0;text-align: left;}
+#redes{font-weight: bold;}
+#redes a{font-size:22px; padding: 0px 10px; text-decoration: none;color:#ffffff; font-family: Arial;} 
+
+.navbar{max-width: 1200px; display: flex; flex-wrap: wrap; margin:auto;}
+.navbar a{text-decoration: none; display:block; color:#ffffff;font-size: 20;padding: 15px; }
+.navbar a:hover{opacity:0.7;}
+
+.dropdown{font-size:20px; padding: 0px 10px; text-decoration: none;color:#ffffff}
+.dropdown:hover p{opacity:0.7; cursor:pointer;}
+.dropdown:hover .dropdown-content{display: block;}
+
+.dropdown-content{display:none;position: absolute; background-color: #5b8500; background-size: cover;z-index: 2;}
+.dropdown-content img{width: 24px; height: 24px; padding-right: 5px;}
+.dropdown-content a{padding: 15px;}
+.dropdown-content a:hover{opacity: 0.7;background: #5B9500;}
+
+
+
+/*SliderShow*/
+.slideshow{position:relative;margin:auto;}
+
+.slide p{position: absolute; font-size: 45px; color:#ffffff;max-width: 1200px;left: 0; right: 0; bottom: 0; top:45%; margin: auto;}
+@keyframes slideText{ from {top: 75%;}to{top: 45%; }}
+
+
+.slide{display: none;vertical-align: center;background-color: rgb(0, 0, 0);}
+.slide img{width: 100%; height: 350px; opacity:0.8;}
+.text { color: #F2F2F2; font-size: 35px; padding: 8px 12px; position: absolute; top:50%; width: 100%; text-align: center;}
+
+.prev,.next{cursor: pointer;position:absolute;top:50%;width:auto; margin-top: -22;padding:16px; color:#ffffff;user-select:none; transition:0.6s ease;}
+.next{right: 0; border-radius: 3px 0px 0px 3px;}
+/* The dots/bullets/indicators */
+.dot {cursor: pointer;height: 15px; width: 15px; margin: 0 2px; background-color: #bbb; border-radius: 50%; display: inline-block;}
+.active, .dot:hover {background-color: #717171;}

@@ -1,0 +1,11 @@
+.contenidoVisual{display: flex; flex-wrap: wrap ; margin-bottom: 30px;}
+.contenidoVisual #elementoVisual{width: 240px;}
+.contenidoVisual #elementoVisual p{font-weight: bold; color: #808080; font-size: 24px; margin-left:-50px;}
+.contenidoVisual #elementoVisual2{width: 350px;}
+.contenidoVisual #elementoVisual2 p{font-weight: bold; color: #808080; font-size: 24px; margin-left:-50px;}
+
+.intermedio{background-image: url(../Images/Body/bg.png); background-repeat:no-repeat; background-size:cover;background-position:center; }
+.intermedio h1{color:#ffffff; text-align: center; padding:25px;}
+.intermedio p{text-align: center; font-size: 24px; color: #ffffff; padding: 15px;}
+.intermedio button{padding: 15px 85px; top: 25; border-radius: 25px; color: #5b8500; font-size: 25px;-webkit-box-align: center;display:-webkit-box;}
+#imageElements{max-width: fit-content; display: -webkit-box; -webkit-box-align: center;}
