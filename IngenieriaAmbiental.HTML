@@ -1,43 +1,11 @@
 <html>
     <header>
-        <link rel="stylesheet" href="CSS/cabezal.css">
         <link rel="stylesheet" href="CSS/cuerpo.css">
+        <script type="text/javascript" src="JS/header.js"></script>
 
     </header>
-    <body>     
-        <!--Inicio ContactBar-->
-        <div class = barras>
-            <div class = contacto style="padding: 5px">
-                <div id = locacion> <p>Calle siempre viva 1448 - teléfono: +54 9 5555 5555
-                </div>
-                <div id = redes>
-                    <a href="https://www.facebook.com">f</a>
-                    <a href="https://www.linkedin.com">in</a>
-                </div>
-            </div>    
-        </div>
-        <!--Fin Contactbar-->
-        <img src ="Images/Header/Cabezal.jpg" alt="Cabezal" height="125px" style="MAX-WIDTH: fit-content; -WEBKIT-BOX-ALIGN: CENTER; DISPLAY: -WEBKIT-BOX;">
-        <!--Inicio NavBar-->        
-        <div class = barras>
-            <div class = navbar>
-                <a href="#">Quienes somos</a>
-                <div class =dropdown><p>Servicios</p>
-                    <div class="dropdown-content">
-                            <a href="#"><img src="Images/Icons/Dropdown/ingemenu.png">Ingenieria Ambiental</a>
-                            <a href="#"><img src="Images/Icons/Dropdown/medicionesmenu.png"><span>Mediciones Ambientales</span></a>
-                            <a href="#"><img src="Images/Icons/Dropdown/ingenieriamenu.png" alt=""> Ingenieria de Diseño</a>
-                            <a href="#"><img src="Images/Icons/Dropdown/analisismenu.png" alt="">Analisis de Laboratorio</a>
-                            <a href="#"><img src="Images/Icons/Dropdown/ingenieriamenu.png" alt="">Parametros Acreditados</a>
-                            <a href="#"><img src="Images/Icons/Dropdown/otrosmenu.png" alt="">Otros</a>
-                    </div>
-                </div>
-                <a href="#">Han confiado en nosotros</a>
-                <a href="#">Blog</a>
-                <a href="#">Contáctenos</a>
-            </div>  
-        </div>
-        <!--Fin NavBar-->  
+    <body>
+        <div w3-include-html = "Header.html"></div>
         <!--Inicio  Slideshow-->    
         <div class = slideshow>
             <div class = "slide fade">
@@ -134,24 +102,7 @@
         <script type="text/javascript">
             var active = 0;
             activatedFade(active);
-            function plusSlides(slideNumber){activatedFade(active +=slideNumber);}
-            function currentSlide(slideNumber){activatedFade(active = slideNumber);}
-
-            function activatedFade(slideNumber){
-                var slideTitles = document.getElementsByClassName("slideText")
-                var slides = document.getElementsByClassName("slide");
-                var dots = document.getElementsByClassName("dot");
-
-                for(let i = 0;i < slides.length; i++){ slides[i].style.display = "none";}
-                for(let i = 0; i <slideTitles.length; i++){ slideTitles[i].style.display = "none";}
-                for(let i = 0;i < dots.length; i++){dots[i].className = dots[i].className.replace(" active", "");}
-                if (slideNumber < 0){ active = slides.length-1;}
-                if (slideNumber > slides.length-1){ active = 0;}
-                slides[active].style.display = "block";
-                dots[active].className += " active";
-                slideTitles[active].style.display = "";
-                slideTitles[active].style.animation = "slideText 2s";
-            }
+            includeHTML();
         </script>        
         <!--Fin    ScriptSlideshow-->
         <a href='https://www.freepik.es/vectores/hoja'>Vector de Hoja creado por upklyak - www.freepik.es</a>
