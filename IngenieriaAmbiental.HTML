@@ -1,11 +1,12 @@
 <html>
-    <header>
+    <head>
+        <link rel="stylesheet" href="CSS/cabezal.css">
         <link rel="stylesheet" href="CSS/cuerpo.css">
         <script type="text/javascript" src="JS/header.js"></script>
-
-    </header>
+        
+    </head>
     <body>
-        <div w3-include-html = "Header.html"></div>
+        <header w3-include-html = "Header.html"></header>
         <!--Inicio  Slideshow-->    
         <div class = slideshow>
             <div class = "slide fade">
@@ -18,9 +19,10 @@
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>    
-        <div style="text-align:center;">
+            <a class="next" onclick="plusSlides(1)">&#10095;</a> 
+
+        </div>   
+        <div id = buttons style="">
             <span class = "dot" onclick="currentSlide(0)"></span>
             <span class = "dot" onclick="currentSlide(1)"></span>
         </div>

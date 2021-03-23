@@ -18,7 +18,7 @@ function includeHTML()
                 if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
                 /* Remove the attribute, and call this function once more: */
                 elmnt.removeAttribute("w3-include-html");
-                includeHTML();
+            //    includeHTML();
             }
             }
             xhttp.open("GET", file, true);
@@ -48,4 +48,16 @@ function activatedFade(slideNumber)
     dots[active].className += " active";
     slideTitles[active].style.display = "";
     slideTitles[active].style.animation = "slideText 2s";
+}
+
+function collapsibleFunc(){
+
+    var coll = document.getElementsByClassName("collapsible-title");
+    var i;
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {content.style.maxHeight = null;} else {content.style.maxHeight = content.scrollHeight + "px"; }});
+    }
 }

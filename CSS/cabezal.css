@@ -15,7 +15,7 @@
 
 .dropdown{font-size:20px; padding: 0px 10px; text-decoration: none;color:#ffffff}
 .dropdown:hover p{opacity:0.7; cursor:pointer;}
-.dropdown:hover .dropdown-content{display: block;}
+.dropdown:hover .dropdown-content{display: block;border-top: groove steelblue;}
 
 .dropdown-content{display:none;position: absolute; background-color: #5b8500; background-size: cover;z-index: 2;}
 .dropdown-content img{width: 24px; height: 24px; padding-right: 5px;}
@@ -31,12 +31,13 @@
 @keyframes slideText{ from {top: 75%;}to{top: 45%; }}
 
 
-.slide{display: none;vertical-align: center;background-color: rgb(0, 0, 0);}
-.slide img{width: 100%; height: 350px; opacity:0.8;}
+.slide{display: none;vertical-align: center;background-color: rgb(100,100,100);}
+.slide img{width: 100%; height: 400px; opacity:0.8;}
 .text { color: #F2F2F2; font-size: 35px; padding: 8px 12px; position: absolute; top:50%; width: 100%; text-align: center;}
 
-.prev,.next{cursor: pointer;position:absolute;top:50%;width:auto; margin-top: -22;padding:16px; color:#ffffff;user-select:none; transition:0.6s ease;}
+.prev,.next{cursor: pointer;position:absolute;top:50%;width:auto; margin-top: -22;padding:16px; color:#F0F0F0;user-select:none; transition:0.6s ease;}
 .next{right: 0; border-radius: 3px 0px 0px 3px;}
 /* The dots/bullets/indicators */
-.dot {cursor: pointer;height: 15px; width: 15px; margin: 0 2px; background-color: #bbb; border-radius: 50%; display: inline-block;}
-.active, .dot:hover {background-color: #717171;}
+#buttons{width: fit-content; text-align: center; display: -webkit-box;  -webkit-box-align: center; transform: translateY(-60px);}
+.dot {cursor: pointer;height: 15px; width: 15px; margin: 0 2px; background-color: #888888; border-radius: 50%; display: inline-block;}
+.active, .dot:hover {background-color: #454545;}

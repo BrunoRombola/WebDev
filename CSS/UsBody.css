@@ -1,0 +1,14 @@
+
+#presentation{max-width: 1200px; padding: 100px; display: flex; flex:wrap;}
+#presentation img{ width: 500px;}
+#presentation p{width: 500; }
+
+/*Collapsible*/
+.collapsible-container{display: -webkit-box; -webkit-box-align:baseline;}
+
+.collapsible-title{text-align: left; background: #999999; width: 500px; padding:12px 20px; border: none; font-size: 18px;}
+.collapsible-title::after{content:'\02795';float:right;}
+.active, .collapsible-title:hover{ background: #666666;}
+
+.collapsible-content{background: #BBBBBB;position: absolute;width: 500px; max-height: 0; overflow: hidden; transition: max-height  0.3s ease-out;}
+.collapsible-content p{ padding: 20px 10px; }
